@@ -1,0 +1,12 @@
+<div class="wdghtml" taskKey="com.javarush.task.task32.task3204">
+<h3>Генератор паролей</h3>
+<p>Реализуй логику метода <mark>getPassword</mark>, который должен возвращать <mark class="green">ByteArrayOutputStream</mark>, в котором будут байты пароля.<br />
+<strong>Требования к паролю:</strong><br />
+1) <span class="text-user"><strong>8</strong></span> символов.<br />
+2) только <strong>цифры</strong> и <strong>латинские</strong> буквы разного регистра.<br />
+3) обязательно должны присутствовать <strong>цифры</strong>, и буквы разного регистра.<br />
+Все сгенерированные пароли должны быть уникальные.</p>
+<p><strong>Пример правильного пароля:</strong><br />
+<code>wMh7smNu</code></p>
+
+</div>

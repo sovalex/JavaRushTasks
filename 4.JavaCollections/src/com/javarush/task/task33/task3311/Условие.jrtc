@@ -1,0 +1,9 @@
+<div class="wdghtml" taskKey="com.javarush.task.task33.task3311">
+<h3>Странная ошибка</h3>
+<p><strong>НЕОБХОДИМО:</strong> подключенные библиотеки <strong>Jackson</strong> <strong>Core</strong>, <strong>Bind</strong> и <strong>Annotation</strong> версии <span class="text-user"><strong>2.6.1</strong></span></p>
+<p>В результате выполнения кода в методе <mark>main</mark> класса <span class="text-corporate"><strong>Solution</strong></span> возникает странная ошибка<br />
+при <strong>сериализации</strong>/<strong>десериализации</strong> в <span class="text-neon">JSON</span>. На экран должна быть выведена строка <mark class="user">sampleJsonString</mark>,<br />
+а выводится не совсем она.</p>
+<p>Разберись в чем проблема и исправь. Обрати внимание на класс <span class="text-corporate"><strong>RealBean</strong></span>.</p>
+
+</div>

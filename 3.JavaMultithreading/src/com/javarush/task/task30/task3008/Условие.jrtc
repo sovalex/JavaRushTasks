@@ -1,0 +1,115 @@
+<div class="wdghtml" taskKey="com.javarush.task.task30.task3008.big22">
+<h3>Чат (22)</h3>
+<p><strong>Итак, подведем итог:</strong><br />
+• Ты написал сервер для обмена текстовыми сообщениями.<br />
+• Ты написал консольный клиент, который умеет подключаться к серверу и<br />
+обмениваться сообщениями с другими участниками.<br />
+• Ты написал бот клиента, который может принимать запросы и отправлять данные о<br />
+текущей дате и времени.<br />
+• Ты написал клиента для чата с графическим интерфейсом.</p>
+<p><strong>Что можно добавить или улучшить:</strong><br />
+• Можно добавить поддержку приватных сообщений (<em>когда сообщение отправляется не</em><br />
+<em> всем, а какому-то конкретному участнику</em>).<br />
+• Можно расширить возможности бота, попробовать научить его отвечать на<br />
+простейшие вопросы или время от времени отправлять шутки.<br />
+• Добавить возможность пересылки файлов между пользователями.<br />
+• Добавить контекстное меню в графический клиент, например, для отправки<br />
+приватного сообщения кому-то из списка участников.<br />
+• Добавить раскраску сообщений в графическом клиенте в зависимости от отправителя.<br />
+• Добавить блокировку сервером участников за что-либо, например, ненормативную<br />
+лексику в сообщениях.<br />
+• Добавить еще миллион фич и полезностей!</p>
+<p><strong>Ты научился:</strong><br />
+• Работать с сокетами.<br />
+• Пользоваться сериализацией и десериализацией.<br />
+• Создавать многопоточные приложения, синхронизировать их, применять модификатор<br />
+volatile, пользоваться классами из библиотеки <em><strong>java.util.concurrent</strong></em>.<br />
+• Применять паттерн <strong>MVC</strong>.<br />
+• Использовать внутренние и вложенные классы.<br />
+• Работать с библиотекой <strong>Swing</strong>.<br />
+• Применять классы <span class="text-corporate"><strong>Calendar</strong></span> и <span class="text-corporate"><strong>SimpleDateFormat</strong></span>.</p>
+<p><strong>Так держать!</strong></p>
+
+<hr>
+<h3>Чат (21)</h3>
+<p>У меня есть отличнейшая новость для тебя. Компонент представление (<em><strong>View</strong></em>) уже готов. Я добавил класс <span class="text-corporate"><strong>ClientGuiView</strong></span>. Он использует библиотеку <em><strong>javax.swing</strong></em>. Ты должен как следует разобраться в каждой строчке этого класса. Если тебе все понятно – это замечательно, если нет – обязательно найди ответы на свои вопросы с помощью дебага, документации или поиска в Интернет.</p>
+<p>Осталось написать компонент контроллер (<mark class="neon">Controller</mark>):<br />
+1. Создай класс <span class="text-corporate"><strong>ClientGuiController</strong></span> унаследованный от <strong><span class="text-corporate">Client</span></strong>.<br />
+2. Создай и инициализируй поле, отвечающее за модель <mark class="green">ClientGuiModel model</mark>.<br />
+3. Создай и инициализируй поле, отвечающее за представление <mark class="green">ClientGuiView view</mark>. Подумай, что нужно передать в конструктор при инициализации объекта.<br />
+4. Добавь внутренний класс <span class="text-corporate"><strong>GuiSocketThread</strong></span> унаследованный от <span class="text-corporate"><strong>SocketThread</strong></span>. Класс <strong><span class="text-corporate">GuiSocketThread</span></strong> должен быть публичным. В нем переопредели следующие методы:<br />
+а) <mark>void processIncomingMessage(String <strong>message</strong>)</mark> – должен устанавливать новое сообщение у модели и вызывать обновление вывода сообщений у представления.<br />
+б) <mark>void informAboutAddingNewUser(String <strong>userName</strong>)</mark> – должен добавлять нового пользователя в модель и вызывать обновление вывода пользователей у отображения.<br />
+в) <mark>void informAboutDeletingNewUser(String <strong>userName</strong>)</mark> – должен удалять пользователя из модели и вызывать обновление вывода пользователей у отображения.<br />
+г) <mark>void notifyConnectionStatusChanged(boolean <strong>clientConnected</strong>)</mark> – должен вызывать аналогичный метод у представления.<br />
+5. Переопредели методы в классе <span class="text-corporate"><strong>ClientGuiController</strong></span>:<br />
+а) <mark>SocketThread getSocketThread()</mark> – должен создавать и возвращать объект типа <strong><span class="text-corporate">GuiSocketThread</span></strong>.<br />
+б) <mark>void run()</mark> – должен получать объект <mark class="green">SocketThread</mark> через метод <mark>getSocketThread()</mark> и вызывать у него метод <mark>run()</mark>. Разберись, почему нет необходимости вызывать метод run в отдельном потоке, как мы это делали для консольного клиента.<br />
+в) <mark>getServerAddress()</mark>, <mark>getServerPort()</mark>, <mark>getUserName()</mark>. Они должны вызывать одноименные методы из представления (<em><strong>view</strong></em>).<br />
+6. Реализуй метод <mark>ClientGuiModel getModel()</mark>, который должен возвращать модель.<br />
+7. Реализуй метод <mark>main()</mark>, который должен создавать новый объект <mark class="green">ClientGuiController</mark> и вызывать у него метод <mark>run()</mark>.<br />
+Запусти клиента с графическим окном, нескольких консольных клиентов и убедись, что<br />
+все работает корректно.</p>
+
+<hr>
+<h3>Чат (20)</h3>
+<p>Консольный клиент мы уже реализовали, чат бота тоже сделали, почему бы не сделать клиента с графическим интерфейсом? Он будет так же работать с нашим сервером, но иметь графическое окно, кнопки и т.д.<br />
+Итак, приступим. При написании графического клиента будет очень уместно воспользоваться паттерном <strong>MVC</strong> (<em>Model-View-Controller</em>). Ты уже должен был с ним сталкиваться, если необходимо, освежи свои знания про <strong>MVC</strong> с помощью Интернет. В нашей задаче самая простая реализация будет у класса, отвечающего за модель (<em>Model</em>).</p>
+<p><strong>Давай напишем его:</strong><br />
+1) Создай класс <span class="text-corporate"><strong>ClientGuiModel</strong></span> в пакете <mark class="green">client</mark>. Все классы клиента должны быть созданы в этом пакете.<br />
+2) Добавь в него множество(<span class="text-red"><strong>set</strong></span>) строк в качестве <mark class="user">final</mark> поля <mark class="user">allUserNames</mark>. В нем будет храниться список всех участников чата. Проинициализируй его.<br />
+3) Добавь поле <mark class="user">String newMessage</mark>, в котором будет храниться новое сообщение, которое получил клиент.<br />
+4) Добавь <strong>геттер</strong> для <mark class="user">allUserNames</mark>, запретив модифицировать возвращенное множество. Разберись, как это можно сделать с помощью метода класса <span class="text-corporate"><strong>Collections</strong></span>.<br />
+5) Добавь <strong>сеттер</strong> и <strong>геттер</strong> для поля <mark class="user">newMessage</mark>.<br />
+6) Добавь метод <mark>void addUser(String <strong>newUserName</strong>)</mark>, который должен добавлять имя участника во множество, хранящее всех участников.<br />
+7) Добавь метод <mark>void deleteUser(String <strong>userName</strong>)</mark>, который будет удалять имя участника из множества.</p>
+
+<hr>
+<h3>Чат (19)</h3>
+<p>Сейчас будем реализовывать класс <span class="text-corporate"><strong>BotSocketThread</strong></span>, вернее переопределять некоторые его методы, весь основной функционал он уже унаследовал от <strong><span class="text-corporate">SocketThread</span></strong>.</p>
+<p>1. Переопредели метод <mark>clientMainLoop()</mark>:<br />
+а) С помощью метода <mark>sendTextMessage()</mark> отправь сообщение с текстом &#171;<em><strong>Привет чатику. Я бот. Понимаю команды: дата, день, месяц, год, время, час, минуты, секунды.</strong></em>&#187;<br />
+б) Вызови реализацию <mark>clientMainLoop()</mark> родительского класса.<br />
+2. Переопредели метод <mark>processIncomingMessage(String <strong>message</strong>)</mark>. Он должен следующим образом обрабатывать входящие сообщения:<br />
+а) Вывести в консоль текст полученного сообщения <mark class="green">message</mark>.<br />
+б) Получить из message имя отправителя и текст сообщения. Они разделены &#171;<em><strong>:</strong> </em>&#171;.<br />
+в) Отправить ответ в зависимости от текста принятого сообщения.<br />
+<strong>Если текст сообщения:</strong><br />
+&#171;<em><strong>дата</strong></em>&#187; – отправить сообщение содержащее текущую дату в формате &#171;<em><strong>d.MM.YYYY</strong></em>&#171;;<br />
+&#171;<em><strong>день</strong></em>&#187; – в формате &#171;<em><strong>d</strong></em>&#171;;<br />
+&#171;<em><strong>месяц</strong></em>&#187; &#8212; &#171;<em><strong>MMMM</strong></em>&#171;;<br />
+&#171;<em><strong>год</strong></em>&#187; &#8212; &#171;<em><strong>YYYY</strong></em>&#171;;<br />
+&#171;<em><strong>время</strong></em>&#187; &#8212; &#171;<em><strong>H:mm:ss</strong></em>&#171;;<br />
+&#171;<em><strong>час</strong></em>&#187; &#8212; &#171;<em><strong>H</strong></em>&#171;;<br />
+&#171;<em><strong>минуты</strong></em>&#187; &#8212; &#171;<em><strong>m</strong></em>&#171;;<br />
+&#171;<em><strong>секунды</strong></em>&#187; &#8212; &#171;<em><strong>s</strong></em>&#171;.<br />
+Указанный выше формат используй для создания объекта <mark class="green">SimpleDateFormat</mark>. Для получения текущей даты необходимо использовать класс <span class="text-corporate"><strong>Calendar</strong></span> и метод <mark>getTime()</mark>.<br />
+Ответ должен содержать имя клиента, который прислал запрос и ожидает ответ, например, если Боб отправил запрос &#171;<em><strong>время</strong></em>&#171;, мы должны отправить ответ &#171;<em><strong>Информация для Боб: 12:30:47</strong></em>&#171;.<br />
+Наш бот готов. Запусти сервер, запусти бота, обычного клиента и убедись, что все работает правильно.<br />
+Помни, что <mark class="green">message</mark> бывают разных типов и не всегда содержат &#171;<em><strong>:</strong></em>&#171;</p>
+
+<hr>
+<h3>Чат (18)</h3>
+<p>Иногда бывают моменты, что не находится достойного собеседника. Не общаться же с самим собой :). Давай напишем бота, который будет представлять собой клиента, который автоматически будет отвечать на некоторые команды. Проще всего реализовать бота, который сможет отправлять текущее время или дату, когда его кто-то об этом попросит.</p>
+<p><strong>С него и начнем:</strong><br />
+1) Создай новый класс <span class="text-corporate"><strong>BotClient</strong></span> в пакете <mark class="green">client</mark>. Он должен быть унаследован от <strong><span class="text-corporate">Client</span></strong>.<br />
+2) В классе <span class="text-corporate"><strong>BotClient</strong></span> создай внутренний класс <span class="text-corporate"><strong>BotSocketThread</strong></span> унаследованный от <span class="text-corporate"><strong>SocketThread</strong></span>. Класс <strong><span class="text-corporate">BotSocketThread</span></strong> должен быть публичным.<br />
+3) <strong>Переопредели методы:</strong><br />
+а) <mark>getSocketThread()</mark>. Он должен создавать и возвращать объект класса <strong><span class="text-corporate">BotSocketThread</span></strong>.<br />
+б) <mark>shouldSendTextFromConsole()</mark>. Он должен всегда возвращать <span class="text-neon"><strong>false</strong></span>. Мы не хотим, чтобы бот отправлял текст введенный в консоль.<br />
+в) <mark>getUserName()</mark>, метод должен генерировать новое имя бота, например: <strong><span class="text-green">date_bot_</span><span class="text-user">XX</span></strong>, где <mark class="user">XX</mark> – любое число от <span class="text-user"><strong>0</strong></span> до <span class="text-user"><strong>99</strong></span>. Для генерации <mark class="user">XX</mark> используй метод <mark>Math.random()</mark>.<br />
+4) Добавь метод <mark>main</mark>. Он должен создавать новый объект <strong><span class="text-corporate">BotClient</span></strong> и вызывать у него метод <mark>run()</mark>.</p>
+
+<hr>
+<h3>Чат (17)</h3>
+<p>Последний, но самый главный метод класса <span class="text-corporate"><strong>SocketThread</strong></span> – это метод <mark>void run()</mark>. Добавь его. Его реализация с учетом уже созданных методов выглядит очень просто.</p>
+<p><strong>Давай напишем ее:</strong><br />
+1) Запроси адрес и порт сервера с помощью методов <mark>getServerAddress()</mark> и <mark>getServerPort()</mark>.<br />
+2) Создай новый объект класса<em><strong> java.net.Socket</strong></em>, используя данные, полученные в предыдущем пункте.<br />
+3) Создай объект класса <span class="text-corporate"><strong>Connection</strong></span>, используя сокет из <strong>п.17.2</strong>.<br />
+4) Вызови метод, реализующий &#171;<em><strong>рукопожатие</strong></em>&#187; клиента с сервером (<mark>clientHandshake()</mark>).<br />
+5) Вызови метод, реализующий основной цикл обработки сообщений сервера.<br />
+6) При возникновении исключений <strong><span class="text-corporate">IOException</span></strong> или <strong><span class="text-corporate">ClassNotFoundException</span></strong> сообщи главному потоку о проблеме, используя <strong><span class="text-corporate">notifyConnectionStatusChanged</span></strong> и <span class="text-neon"><strong>false</strong></span> в качестве параметра.</p>
+<p>Клиент готов, можешь запустить сервер, несколько клиентов и проверить как все работает.</p>
+
+</div>

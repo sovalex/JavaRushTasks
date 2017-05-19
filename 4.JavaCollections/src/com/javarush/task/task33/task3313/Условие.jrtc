@@ -1,0 +1,5 @@
+<div class="wdghtml" taskKey="com.javarush.task.task33.task3313">
+<h3>Сериализация даты в JSON</h3>
+<p>Используя аннотацию <strong><span class="text-corporate">JsonFormat</span></strong> сделай так, чтобы поле содержащее дату в классе <span class="text-corporate"><strong>Event </strong></span>сериализировалось в формате (<strong><em>dd-MM-yyyy hh:mm:ss</em></strong>).</p>
+
+</div>

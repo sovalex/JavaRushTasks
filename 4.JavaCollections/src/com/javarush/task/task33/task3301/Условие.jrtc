@@ -1,0 +1,9 @@
+<div class="wdghtml" taskKey="com.javarush.task.task33.task3301">
+<h3>Первая сериализация в JSON</h3>
+<p><strong>НЕОБХОДИМО:</strong> подключенные библиотеки <strong>Jackson Core</strong>, <strong>Bind</strong> и <strong>Annotation</strong> версии <span class="text-user"><strong>2.6.1</strong></span></p>
+<p>1) В программе не выполнено основное требование к сериализации в <span class="text-neon">JSON</span>.<br />
+Найди ошибку и исправь.<br />
+2) Расставь правильно <span class="text-neon">JSON</span> аннотации у классов.<br />
+Все данные должны сериализоваться.</p>
+
+</div>

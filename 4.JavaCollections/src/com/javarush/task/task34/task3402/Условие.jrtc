@@ -1,0 +1,7 @@
+<div class="wdghtml" taskKey="com.javarush.task.task34.task3402">
+<h3>Факториал с помощью рекурсии</h3>
+<p>Почитай про <strong>вычисление</strong> <strong>факториала</strong>.<br />
+Реализуй рекурсивную логику метода <mark>factorial</mark>, где <mark class="user">n</mark> &#8212; это число, факториал которого нужно вычислить.<br />
+Не создавай в классе <span class="text-corporate"><strong>Solution</strong></span> дополнительные поля.</p>
+
+</div>

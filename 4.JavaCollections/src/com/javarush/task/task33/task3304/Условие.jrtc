@@ -1,0 +1,11 @@
+<div class="wdghtml" taskKey="com.javarush.task.task33.task3304">
+<h3>Конвертация из одного класса в другой используя JSON</h3>
+<p><strong>НЕОБХОДИМО:</strong> подключенные библиотеки <strong>Jackson</strong> <strong>Core</strong>, <strong>Bind</strong> и <strong>Annotation</strong> версии <span class="text-user"><strong>2.6.1</strong></span></p>
+<p>Два класса имеют одинаковые поля, но не имеют общий суперкласс. Пример, классы <span class="text-corporate"><strong>First</strong></span> и <span class="text-corporate"><strong>Second</strong></span>.<br />
+Реализовать логику метода <mark>convertOneToAnother</mark>, который должен возвращать объект класса <span class="text-corporate"><strong>resultClassObject</strong></span>, значения полей которого равны значениям полей в объекте one.<br />
+Используй объект типа <strong><span class="text-corporate">ObjectMapper</span></strong>.<br />
+Известно, что у классов есть <span class="text-neon">JSON</span> аннотация, у которой значение property равно имени класса в нижнем регистре.<br />
+На примере класса <span class="text-corporate"><strong>First</strong></span>, это <span class="text-neon">className=&#187;first&#187;</span><br />
+Классы <span class="text-corporate"><strong>First</strong></span> и <span class="text-corporate"><strong>Second</strong></span> не участвуют в тестировании, они предоставлены в качестве тестовых данных.</p>
+
+</div>

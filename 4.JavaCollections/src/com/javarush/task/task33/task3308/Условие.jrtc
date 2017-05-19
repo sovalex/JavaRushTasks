@@ -1,0 +1,8 @@
+<div class="wdghtml" taskKey="com.javarush.task.task33.task3308">
+<h3>Создание класса по строке xml</h3>
+<p>Восстанови класс по переданной строке <span class="text-neon">xml</span>.<br />
+Класс должен быть в отдельном файле.<br />
+Метод <mark>getClassName</mark> должен возвращать восстановленный класс.<br />
+Метод <mark>main</mark> не участвует в тестировании.</p>
+
+</div>

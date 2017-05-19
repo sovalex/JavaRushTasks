@@ -1,0 +1,7 @@
+<div class="wdghtml" taskKey="com.javarush.task.task34.task3401">
+<h3>Числа Фибоначчи с помощью рекурсии</h3>
+<p>Почитай про <strong>числа</strong> <strong>Фибоначчи</strong>.<br />
+Реализуй рекурсивную логику метода <mark>fibonacci</mark>, где <mark class="user">n</mark> &#8212; это номер элемента в последовательности Фибоначчи.<br />
+Не создавай в классе <span class="text-corporate"><strong>Solution</strong></span> дополнительные поля.</p>
+
+</div>

@@ -1,0 +1,10 @@
+<div class="wdghtml" taskKey="com.javarush.task.task32.task3207">
+<h3>К серверу по RMI</h3>
+<p>Реализуй логику метода <mark>run</mark> в <strong><span class="text-neon">CLIENT_THREAD</span></strong>. В нем будет имитироваться клиентская часть, которая коннектится к серверу.<br />
+1) Из <mark class="user"><strong>registry</strong></mark> получи сервис с именем <strong><span class="text-neon">UNIC_BINDING_NAME</span></strong>.<br />
+2) Вызови метод у полученного сервиса, передай любой не пустой аргумент.<br />
+3) Выведи в консоль результат вызова метода.<br />
+4) Обработай специфические исключения.<br />
+Метод <mark>main</mark> не участвует в тестировании.</p>
+
+</div>

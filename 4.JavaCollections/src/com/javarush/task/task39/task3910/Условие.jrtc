@@ -1,0 +1,8 @@
+taskKey="com.javarush.task.task39.task3910"
+
+isPowerOfThree
+
+Исправь ошибку в методе isPowerOfThree(int n), он должен возвращать true, если n является целочисленной
+степенью числа 3. Иначе - false.
+
+

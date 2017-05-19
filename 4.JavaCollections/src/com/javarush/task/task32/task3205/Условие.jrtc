@@ -1,0 +1,12 @@
+<div class="wdghtml" taskKey="com.javarush.task.task32.task3205">
+<h3>Создание прокси-объекта</h3>
+<p>1) В отдельном файле создай публичный класс <strong><span class="text-corporate">CustomInvocationHandler</span></strong>, который будет хэндлером при создании прокси-объекта.<br />
+2) <span class="text-corporate"><strong>CustomInvocationHandler</strong></span> должен поддерживать интерфейс <span class="text-yellow"><strong>InvocationHandler</strong></span>.<br />
+3) <span class="text-corporate"><strong>CustomInvocationHandler</strong></span> должен иметь один публичный конструктор с одним аргументом типа <strong><span class="text-corporate">SomeInterfaceWithMethods</span></strong>.<br />
+4) Перед вызовом любого метода у оригинального объекта должна выводиться фраза <strong><em><span class="text-green">[methodName in]</span></em></strong>.<br />
+5) После вызова любого метода у оригинального объекта должна выводиться фраза <em><span class="text-green"><strong>[methodName out]</strong></span></em>.<br />
+6) Реализуй логику метода <mark>getProxy</mark>, который должен создавать прокси (<mark>Proxy.newProxyInstance(&#8230;)</mark>).<br />
+См. пример вывода в методе <mark>main</mark>.<br />
+Метод <mark>main</mark> не участвует в тестировании.</p>
+
+</div>

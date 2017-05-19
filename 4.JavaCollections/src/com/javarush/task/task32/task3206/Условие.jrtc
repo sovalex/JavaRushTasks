@@ -1,0 +1,9 @@
+<div class="wdghtml" taskKey="com.javarush.task.task32.task3206">
+<h3>Дженерики для создания прокси-объекта</h3>
+<p>В классе <span class="text-corporate"><strong>Solution</strong></span> создай публичный метод <mark>getProxy</mark>:<br />
+1) Метод <mark>getProxy</mark> должен возвращать прокси для любого интерфейса, который наследуется от <strong><span class="text-corporate">Item</span></strong>.<br />
+2) <mark>getProxy</mark> должен иметь два параметра. <em><strong>Первый</strong></em> &#8212; класс возвращаемого типа, <em><strong>второй</strong></em> &#8212; классы дополнительных интерфейсов (<em>используй аргумент переменной длины &#8230;</em>).<br />
+3) Используй <strong><span class="text-corporate">ItemInvocationHandler</span></strong> для создания прокси.<br />
+Метод <mark>main</mark> не участвует в тестировании.</p>
+
+</div>

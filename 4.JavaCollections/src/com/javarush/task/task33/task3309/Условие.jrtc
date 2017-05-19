@@ -1,0 +1,21 @@
+<div class="wdghtml" taskKey="com.javarush.task.task33.task3309">
+<h3>Комментарий внутри xml</h3>
+<p>Реализовать метод <mark>toXmlWithComment</mark>, который должен возвращать строку &#8212; <span class="text-neon">xml</span> представление объекта <mark class="green">obj</mark>.<br />
+В строке перед каждым тегом <mark class="user">tagName</mark> должен быть вставлен комментарий <strong>comment</strong>.<br />
+Сериализация <mark class="green">obj</mark> в <span class="text-neon">xml</span> может содержать <strong>CDATA</strong> с искомым тегом. Перед ним вставлять комментарий не нужно.</p>
+<p><strong>Пример вызова:<br />
+</strong><span class="text-neon">toXmlWithComment(firstSecondObject, &#171;second&#187;, &#171;it&#8217;s a comment&#187;)</span></p>
+<p><strong>Пример результата:</strong><br />
+<code>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;<br />
+&lt;first&gt;<br />
+&lt;!--it's a comment--&gt;<br />
+&lt;second&gt;some string&lt;/second&gt;<br />
+&lt;!--it's a comment--&gt;<br />
+&lt;second&gt;some string&lt;/second&gt;<br />
+&lt;!--it's a comment--&gt;<br />
+&lt;second&gt;&lt;![CDATA[need CDATA because of &lt; and &gt;]]&gt;&lt;/second&gt;<br />
+&lt;!--it's a comment--&gt;<br />
+&lt;second/&gt;<br />
+&lt;/first&gt;</code></p>
+
+</div>

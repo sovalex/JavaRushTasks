@@ -1,0 +1,6 @@
+<div class="wdghtml" taskKey="com.javarush.task.task34.task3406">
+<h3>Слабые ссылки</h3>
+<p>Разберись в примере.<br />
+Внутри метода main после создания объекта типа <span class="text-corporate"><strong>Monkey</strong></span> создай слабую ссылку (<span class="text-corporate"><strong>WeakReference</strong></span>) на него.</p>
+
+</div>

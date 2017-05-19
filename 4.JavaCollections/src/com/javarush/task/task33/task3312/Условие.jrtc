@@ -1,0 +1,10 @@
+<div class="wdghtml" taskKey="com.javarush.task.task33.task3312">
+<h3>Сериализация зоопарка</h3>
+<p>Сделай так, чтобы при сериализации объекта типа <strong><span class="text-corporate">Zoo</span></strong>, каждому элементу списка <strong><span class="text-red">animals</span></strong> был добавлен тип (<mark class="green">dog</mark> для класса <span class="text-corporate"><strong>Dog</strong></span>, <mark class="green">cat</mark> для класса <span class="text-corporate"><strong>Cat</strong></span>).<br />
+Для проверки можешь использовать метод <mark>main</mark> класса <span class="text-corporate"><strong>Solution</strong></span>.</p>
+<p><strong>Было:</strong><br />
+<code>{"animals":[{"name":"doggy","barkVolume":0.0},{"name":"catty","lives":0}]}</code></p>
+<p><strong>Должно стать:</strong><br />
+<code>{"animals":[{"type":"dog","name":"doggy","barkVolume":0.0},{"type":"cat","name":"catty","lives":0}]}</code></p>
+
+</div>

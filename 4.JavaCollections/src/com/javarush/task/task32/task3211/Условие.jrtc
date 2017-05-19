@@ -1,0 +1,10 @@
+<div class="wdghtml" taskKey="com.javarush.task.task32.task3211">
+<h3>Целостность информации</h3>
+<p>Представь ситуацию, ты выкачал архив с интернета, и в момент скачивания у тебя на несколько секунд пропало соединение.<br />
+Нужно убедиться, валидный ли архив ты скачал. Для этого сверим его <strong>MD5</strong> хеш.<br />
+Прочитать о <strong>MD5</strong> на wiki.<br />
+Прочитать о <strong>MessageDigest</strong>.</p>
+<p>Реализуй логику метода <mark>compareMD5</mark>, который должен получать <strong>MD5</strong> хеш из переданного <mark class="green">ByteArrayOutputStream</mark> и сравнивать с эталонным <strong>MD5</strong> переданным вторым параметром.<br />
+Метод <mark>main</mark> не участвует в тестировании.</p>
+
+</div>

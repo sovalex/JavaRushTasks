@@ -1,0 +1,7 @@
+<div class="wdghtml" taskKey="com.javarush.task.task32.task3203">
+<h3>Пишем стек-трейс</h3>
+<p>Реализуй логику метода <mark>getStackTrace</mark>, который в виде одной строки (<em>одного объекта типа</em> <span class="text-corporate">String</span>) должен возвращать весь стек-трейс переданного исключения.<br />
+Используй подходящий метод класса <span class="text-corporate"><strong>Throwable</strong></span>, который поможет записать стек-трейс в <strong><span class="text-corporate">StringWriter</span></strong>.<br />
+Метод <mark>main</mark> не участвует в тестировании.</p>
+
+</div>

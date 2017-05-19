@@ -1,0 +1,7 @@
+<div class="wdghtml" taskKey="com.javarush.task.task33.task3307">
+<h3>Десериализация XML объекта</h3>
+<p>В метод <mark>convertFromXmlToNormal</mark> первым параметром приходит строка, содержащая <span class="text-neon">xml</span> объект.<br />
+Вторым параметром приходит класс, объект которого необходимо вернуть.<br />
+Метод <mark>convertFromXmlToNormal</mark> должен создать объект из <span class="text-neon">xml</span>-строки и вернуть его.</p>
+
+</div>

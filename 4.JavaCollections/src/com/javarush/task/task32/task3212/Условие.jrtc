@@ -1,0 +1,12 @@
+<div class="wdghtml" taskKey="com.javarush.task.task32.task3212">
+<h3>Service Locator</h3>
+<p>Прочитать о паттерне <strong>Service locator</strong>.</p>
+<p>Реализуй логику метода <mark>getService(String <strong>jndiName</strong>)</mark> в <strong><span class="text-corporate">ServiceLocator</span></strong>.<br />
+В нем будет реализована работа с контекстом и кэшем.</p>
+<p>1) Верни из кэша нужный <strong>сервис</strong>.<br />
+2) Если в кэше нет нужного сервиса то:<br />
+2.1) Создай <strong>контекст</strong>.<br />
+2.2) Возьми у <strong>контекста</strong> нужный <strong>сервис</strong>.<br />
+2.3) Добавь <strong>сервис</strong> в <strong>кеш</strong> и верни его.</p>
+
+</div>

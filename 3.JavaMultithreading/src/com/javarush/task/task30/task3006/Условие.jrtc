@@ -1,0 +1,10 @@
+<div class="wdghtml" taskKey="com.javarush.task.task30.task3006">
+<h3>Swap по-новому</h3>
+<p>В классе <span class="text-corporate"><strong>Pair</strong></span> реализуй метод <mark>swap</mark>, который должен для <mark class="user">x</mark>, y менять местами их значения.<br />
+Можно использовать только операции:<br />
+1) Исключающее или.<br />
+2) Присваивание.<br />
+3) Исключающее или с присваиванием.<br />
+Не оставляй комментарии, не меняй остальной код.</p>
+
+</div>

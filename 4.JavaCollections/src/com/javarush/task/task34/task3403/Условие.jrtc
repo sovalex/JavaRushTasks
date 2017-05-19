@@ -1,0 +1,12 @@
+<div class="wdghtml" taskKey="com.javarush.task.task34.task3403">
+<h3>Разложение на множители с помощью рекурсии</h3>
+<p>Разложить целое число <mark class="user">n</mark> <strong>&gt;</strong> <span class="text-user"><strong>1</strong></span> на простые множители.<br />
+Вывести в консоль через пробел все множители в порядке возрастания.<br />
+Написать рекурсивный метод для вычисления простых множителей.<br />
+Не создавай в классе <span class="text-corporate"><strong>Solution</strong></span> дополнительные поля.</p>
+<p><strong>Пример:</strong><br />
+<code>132</code></p>
+<p><strong>Вывод на консоль:</strong><br />
+<code>2 2 3 11</code></p>
+
+</div>

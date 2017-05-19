@@ -1,0 +1,12 @@
+<div class="wdghtml" taskKey="com.javarush.task.task32.task3201">
+<h3>Запись в существующий файл</h3>
+<p>В метод <mark>main</mark> приходят три параметра:<br />
+1) <mark class="user"><strong>fileName</strong></mark> &#8212; путь к файлу;<br />
+2) <mark class="user"><strong>number</strong></mark> &#8212; число, позиция в файле;<br />
+3) <mark class="user">text</mark> &#8212; текст.<br />
+Записать <mark class="user">text</mark> в файл <mark class="user">fileName</mark> начиная с позиции <mark class="user">number</mark>.<br />
+Запись должна производиться поверх старых данных, содержащихся в файле.<br />
+Если файл слишком короткий, то записать в конец файла.<br />
+Используй <span class="text-corporate"><strong>RandomAccessFile</strong></span> и его методы <mark>seek</mark> и <mark>write</mark>.</p>
+
+</div>

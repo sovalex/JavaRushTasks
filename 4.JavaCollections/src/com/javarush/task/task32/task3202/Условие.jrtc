@@ -1,0 +1,7 @@
+<div class="wdghtml" taskKey="com.javarush.task.task32.task3202">
+<h3>Читаем из потока</h3>
+<p>Реализуй логику метода <mark>getAllDataFromInputStream</mark>. Он должен вернуть <mark class="user">StringWriter</mark>, содержащий все данные из переданного потока.<br />
+Возвращаемый объект ни при каких условиях не должен быть <span class="text-neon"><strong>null</strong></span>.<br />
+Метод <mark>main</mark> не участвует в тестировании.</p>
+
+</div>

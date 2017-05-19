@@ -1,0 +1,7 @@
+<div class="wdghtml" taskKey="com.javarush.task.task33.task3302">
+<h3>Вторая сериализация в JSON</h3>
+<p><strong>НЕОБХОДИМО:</strong> подключенные библиотеки <strong>Jackson</strong> <strong>Core</strong>, <strong>Bind</strong> и <strong>Annotation</strong> версии <span class="text-user"><strong>2.6.1</strong></span></p>
+<p>Расставь <span class="text-neon">JSON</span> аннотации так, чтобы результат работы метода <mark>main</mark> был следующим<br />
+<code>{"wildAnimal":"Murka","over":3}</code></p>
+
+</div>

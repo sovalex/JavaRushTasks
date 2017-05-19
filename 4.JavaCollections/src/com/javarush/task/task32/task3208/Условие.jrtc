@@ -1,0 +1,12 @@
+<div class="wdghtml" taskKey="com.javarush.task.task32.task3208">
+<h3>RMI-2</h3>
+<p>Реализуй логику метода <mark>run</mark> в <span class="text-neon"><strong>SERVER_THREAD</strong></span>. В нем будет имитироваться серверная часть:<br />
+1) Инициализируй поле <mark class="user">registry</mark>, которое будет принимать и обрабатывать запросы на <span class="text-user"><strong>2099</strong></span> порту.<br />
+2) Создай два объекта &#8212; <strong><span class="text-corporate">Cat</span></strong> и <span class="text-corporate"><strong>Dog</strong></span>.<br />
+3) Используй класс <strong><span class="text-corporate">UnicastRemoteObject</span></strong>, чтобы создать <strong><span class="text-corporate">Remote</span></strong> объекты для созданных <span class="text-corporate"><strong>Cat</strong></span> и <span class="text-corporate"><strong>Dog</strong></span>.<br />
+Remote объекты будут в состоянии принимать обращения к своим методам используя выбранный порт (<strong><span class="text-user">2099</span></strong>).<br />
+4) Для <span class="text-corporate"><strong>Cat</strong></span> и <span class="text-corporate"><strong>Dog</strong></span> добавь в <mark class="user">registry</mark> связь уникального текстового ключа и <strong><span class="text-corporate">Remote</span></strong> объекта. Текстовый ключ придумай сам.<br />
+5) При возникновении любого исключения выведи его стек-трейс в поток <mark class="green">System.err</mark>.<br />
+Метод <mark>main</mark> не участвует в тестировании.</p>
+
+</div>
